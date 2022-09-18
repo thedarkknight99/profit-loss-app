@@ -10,7 +10,7 @@ function calculateProfitLoss(initial, quantity, current) {
         //loss
         var loss = (initial - current) * quantity;
         var lossPercent = (loss / initial) * 100;
-        outputBox.innerText = `Hey! The loss is ${loss} and loss percentage is ${lossPercent}😟`;
+        outputBox.innerText = `Hey! The loss is ${loss} and loss percentage is ${lossPercent.toFixed(2)}😟`;
     }
     else if (current == initial) {
         outputBox.innerText = `No gain no pain!! It's a break-even point😐`;
@@ -19,7 +19,7 @@ function calculateProfitLoss(initial, quantity, current) {
         //profit
         var profit = (current - initial) * quantity;
         var profitPercent = (profit / initial) * 100;
-        outputBox.innerText = `Hey! The profit is ${profit} and profit percentage is ${profitPercent}🤑`;
+        outputBox.innerText = `Hey! The profit is ${profit} and profit percentage is ${profitPercent.toFixed(2)}🤑`;
     }
 }
 

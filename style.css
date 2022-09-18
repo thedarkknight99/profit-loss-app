@@ -11,8 +11,12 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+h1 {
+    color: var(--primary-color);
+}
+
 .container {
-    width: 60%;
+    width: 50%;
     margin-left: auto;
     margin-right: auto;
     padding: 4rem;
