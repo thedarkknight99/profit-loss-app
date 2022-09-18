@@ -1,12 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Open+Sans:wght@400;700&display=swap');
+
+
+:root {
+    --primary-color: #be123c;
+    --background-color: #ffe4e6;
+}
+
 body {
     text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem;
+    border-radius: 1rem;
+    background-color: var(--background-color);
+    height: 50vh;
 }
 
 label {
-    display: block;
-    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+
+input {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border-radius: 1px solid var(--primary-color);
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border-color: var(--primary-color);
 }
 
 button {
     margin-bottom: 1rem;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    border-color: var(--primary-color);
+    padding: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #ec4899;
+}
+
+#output-box {
+    color: var(--primary-color);
 }
